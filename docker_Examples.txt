@@ -19,3 +19,6 @@ docker run -d -p 7001:7001 --name AvantticWLS --env-file ./infraDomain.env.list 
  
  docker stop $(docker ps -a -q)
  docker rm $(docker ps -a -q)
+ 
+ docker tag javier/jar jllorente/javaapp
+ docker push  jllorente/javaapp
